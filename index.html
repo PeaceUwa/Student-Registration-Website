@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Serene Polytechnic, Serendipity</h1>
+    <p>We strive for calmness, peace and resilience.</p>
+  </header>
+  <main>
+    <div class="instructions">
+      <p>Fill your details to complete your registration.</p>
+      <p><span>NOTE:</span> All fields marked required must be filled.</p>
+    </div>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="div">
+          <label for="first-name">First Name:</label>
+          <input id="first-name" type="text" minlength="3" maxlength="50" placeholder="Jane" required name="firstName"/>
+        </div>
+        <div class="div">
+          <label for="middle-name">Middle Name:</label>
+          <input id="middle-name" placeholder="optional" type="text" name="middleName"  minlength="3" maxlength="50" />
+        </div>
+        <div class="div">
+          <label for="last-name">Last Name:</label>
+          <input id="last-name" type="text" minlength="3" maxlength="50" name="lastName" placeholder="Doe" required />
+        </div>
+        <div class="div">
+          <label for="d-o-b">Date of Birth:</label>
+          <input id="d-o-b" type="date"
+           name="dateOfBirth" required />
+        </div>
+        <p>Gender: </p>
+        <div class="">
+          <input id="female" name="gender" value="female" type="radio" />
+          <label for="female">Female</label>
+          
+          <input id="male" value="male" type="radio" name="gender" />
+          <label for="male">Male</label>
+        </div>
+        <div class="div">
+          <label for="phone">Phone Number:</label>
+          <input id="phone" type="tel" minlength="10" maxlength="30" placeholder="+23412345678891" required name="phoneNumber" />
+        </div>
+        <div class="div">
+          <label for="email">Email Address:</label>
+          <input id="email" type="email" placeholder="janedoe@yahio.com" required name="emailAddress"/>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Acedemic Information</legend>
+        <div class="div">
+          <p>Department:</p>
+          <select name="department">
+           
+            <option>Select Department</option>
+            <optgroup label="Physical Science & Laboratory Technology">
+              <option>Biochemistry</option>
+              <option>Chemistry</option>
+              <option>Chemistry/Biochemistry</option>
+            </optgroup>
+            
+            <optgroup label="Science Laboratory Technology">
+              <option>Science Laboratory Technology</option>
+              <option>Hospitality Management</option>
+              <option>Food Technology</option>
+            </optgroup>
+            
+            <optgroup label="Biological Science & Lab Technology">
+              <option>Microbiology</option>
+              <option>Biology</option>
+              <option>BiologyMicro</option>
+            </optgroup>
+            
+            <optgroup label="Computer Science">
+              <option>Computer Science</option>
+              <option>Telecoms</option>
+            </optgroup>
+            
+            <optgroup label="Engineering">
+              <option>Electrical Engineering</option>
+              <option>Mechanical Engineering</option>
+              <option>Chemical Engineering</option>
+            </optgroup>
+            
+            <optgroup label="Social Science">
+              <option>Marketing</option>
+              <option>Business Administration</option>
+              <option>Public Administration</option>
+            </optgroup>
+            
+            <optgroup label="Arts">
+              <option>Fashion Design</option>
+              <option>Drawing</option>
+              <option>Architechture</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="div">
+          <p>Level:</p>
+          <select name="level">
+            <option>ND1</option>
+            <option>ND2</option>
+            <option>ND3</option>
+            <option>ND Carryover</option>
+            <option>HND1</option>
+            <option>HND2</option>
+            <option>HND3</option>
+            <option>HND Carryover</option>
+          </select>
+        </div>
+        <div  class="div">
+          <label for="matric-number">Matric Number:</label>
+          <input id="matric-number" type="text" minlength="9" maxlength="25" required />
+        </div>
+      </fieldset>
+      <fieldset class="fieldset-3">
+        <legend>Course Selection</legend>
+        <div>
+          <input id="csc101" type="checkbox" value="csc101" />
+          <label for="csc101">CSC101</label>
+        </div>
+        
+        <div>
+          <input id="csc102" type="checkbox" value="csc102" />
+          <label for="csc102">CSC102</label>
+        </div>
+
+        <div>
+          <input id="csc103" type="checkbox" value="csc103" />
+          <label for="csc103">CSC103</label>
+        </div>
+        
+        <div>
+        <input id="csc104" type="checkbox" value="csc104" />
+        <label for="csc104">CSC104</label>
+        </div>
+        
+        <div>
+        <input id="csc105" type="checkbox" value="csc105" />
+        <label for="csc105">CSC105</label>
+        </div>
+        
+        <div>
+        <input id="csc106" type="checkbox" value="csc106" />
+        <label for="csc106">CSC106</label>
+        </div>
+        
+        <div>
+          <input id="csc107" type="checkbox" value="csc107" />
+          <label for="csc107">CSC107</label>
+        </div>
+        
+        <div>
+          <input id="csc108" type="checkbox" value="csc108" />
+          <label for="csc108">CSC108</label>
+        </div>
+        
+        <div>
+          <input id="csc109" type="checkbox" value="csc109" />
+          <label for="csc109">CSC109</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Account Setup</legend>
+        <div class="div">
+          <label for="username">Username:</label>
+          <input id="username" type="text" minlength="5" maxlength="25" name="username" required />
+        </div>
+        <div class="div">
+          <label>Password:</label>
+          <input id="password" type="password" name="password" minlength="8" maxlength="80" required />
+        </div>
+        <div class="div">
+          <label for="confirm-password">Confirm Password:</label>
+          <input id="confirm-password" name="confirmPassword" type="password" minlength="8" max="80" required />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Information</legend>
+        <div class="div">
+          <label for="address">Address:</label>
+          <input id="address" type="text" name="address" minlength="10" maxlength="500" />
+        </div>
+        <div class="div">
+          <label for="s-o-o">State of Origin:</label>
+          <input id="s-o-o" name="stateOfOrigin" type="text" minlength="3" maxlength="100"/>
+        </div>
+        <div class="div">
+          <label for="l-g-o">Local Government Origin:</label>
+          <input id="l-g-o" name="localGorvernmentOrigin" type="text" minlength="3" maxlength="150"/>
+        </div>
+        <div class="div">
+          <label for="guardiaan">Parent/Gaurdian:</label>
+          <input id="guardian" name="parent/Guardian" type="text" minlength="10" maxlength="100" />
+        </div>
+        <div class="div">
+          <label for="e-c">Emergency Contact:</label>
+          <input id="e-c" name="emergencyContact" type="tel" minlength="5" maxlength="30" />
+        </div>
+        <div class="div">
+          <label for="extra-info">Extra Info:</label>
+          <textarea name="extraInfo" id="extra-info" cols="30" rows="10" minlength="200" maxlength="1000"></textarea>
+        </div>
+      </fieldset>
+      <div class="button-wrapper">
+        <button class="reset-btn" type="reset">Reset Form</button>
+        <button class="submit-btn" type="submit">Submit Form</button>
+      </div>
+
+    </form>
+  </main>
+  <footer>
+    <p>Serene Polytechnic, Serendipity
+     2026 &copy</p>
+    
+  </footer>
+</body>
+
+</html>
