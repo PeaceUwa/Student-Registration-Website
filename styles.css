@@ -34,6 +34,10 @@ font-family: "Poppins", "Segoe UI", sans-serif;
   font-size: 1.1em;
 }
 
+header p{
+  font-size: 0.95rem;
+}
+
 .istructions span{
   font-weight: 600;
 }
@@ -47,6 +51,7 @@ fieldset{
 div{
   margin-bottom: 1.5em;
 }*/
+
 
 
 
@@ -77,6 +82,10 @@ div p{
 
 input:hover{
   cursor: pointer;
+}
+
+input::placeholder{
+  font-size: 1rem;
 }
 
 
