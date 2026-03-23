@@ -94,7 +94,8 @@ input::placeholder{
   margin-top:  2em;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 1em;
   align-items: center;
   
 }
@@ -103,6 +104,7 @@ input::placeholder{
 
 button{
   text-align: center;
+  flex: 1;
   min-height: 3em;
   padding: .5em;
   width: 120px;
@@ -113,8 +115,8 @@ button{
 }
 
 .reset-btn{
-  background: #BB2309;
-  color: #fff;
+  background: #e5e5e5
+  color: #333;
 }
 
 .reset-btn:hover,
